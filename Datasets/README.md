@@ -1,10 +1,4 @@
-## Joint Space and Task Space Representations for Concentric Tube Continuum Robots 
-
-In this repository, different representations are used to generate new smaller datasets based on the CRL-Dataset-CTCR-Pose.
-Code and derived datasets will be provided.
-
-
-### A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots
+## A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots
 
 We use a dataset captured from a three-tube concentric tube continuum robot for use in learning-based kinematics research.
 The dataset consists of 100 000 joint configurations and the corresponding four 6 dof sensors in SE(3) measured with an electromagnetic tracking system.
