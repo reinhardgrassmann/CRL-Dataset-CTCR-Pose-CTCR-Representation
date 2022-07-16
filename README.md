@@ -1,6 +1,12 @@
-## A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots
+## Joint Space and Task Space Representations for Concentric Tube Continuum Robots 
 
-We present a dataset captured from a three-tube concentric tube continuum robot for use in learning-based kinematics research.
+In this repository, different representations are used to generate new smaller datasets based on the CRL-Dataset-CTCR-Pose.
+Code and derived datasets will be provided.
+
+
+### A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots
+
+We use a dataset captured from a three-tube concentric tube continuum robot for use in learning-based kinematics research.
 The dataset consists of 100 000 joint configurations and the corresponding four 6 dof sensors in SE(3) measured with an electromagnetic tracking system.
 The dataset has been collected in eight sequences. 
 Each sequence encompasses 12 500 dataset points. 
@@ -23,6 +29,18 @@ The annotation of the dataset is provided in table below.
 
 For more details on the dataset, our [paper](https://openreview.net/pdf?id=DW9uz_GZ0og) provide implementation details on the data acquisition and a brief overview of the used testbed including the robotic prototype.
 Furthermore, insights on learning the kinematics of this type of robot and a discussion on open challenges are provided.
+If you want to cite our CRL-Dataset-CTCR-Pose, you can use our IROS 2022 paper [(Preprint)](https://openreview.net/pdf?id=DW9uz_GZ0og):
+
+```bibtex
+    @inproceedings{GrassmannBurgner-Kahrs_et_al_RSS_WS_2022,
+        title       =   {A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots},
+        author      =   {Grassmann, Reinhard M. and Chen, Ryan Zeyuan and Liang, Nan and Burgner-Kahrs, Jessica},
+        url         =   {https://openreview.net/pdf?id=DW9uz_GZ0og},
+        year        =   {2022},
+        booktitle   =   {Robotics: Science and Systems -- Workshop on Learning from Diverse, Offline Data (L-DOD)},
+    }
+```
+
 
 ### Concentric Tube Continuum Robots
 
@@ -42,25 +60,22 @@ More details on CTCR, ckeck the following review paper
 - Mahoney et al. [A review of concentric tube robots: modeling, control, design, planning, and sensing](https://doi.org/10.1142/9789813232266_0007)
 - Mitros et al. [From Theoretical Work to Clinical Translation: Progress in Concentric Tube Robots](https://doi.org/10.1146/annurev-control-042920-014147)
 
-For learning the kinematics of a CTCR, please take a look at the following paper.
+An attempt to define a CTCR and some details on retrospective on the development of CTCR prototypes can be found in our [RSS workshop](https://sites.google.com/stanford.edu/roboticsretrospectives/home) paper
 
-- Bergeles et al. [Concentric tube robot kinematics using neural networks](https://scholar.google.com/scholar?as_sdt=0%2C31&q=Concentric+tube+robot+kinematics+using+neural+networks&btnG=)
-- Grassmann et al. [Learning the Forward and Inverse Kinematics of a 6-DOF Concentric Tube Continuum Robot in SE(3)](https://doi.org/10.1109/IROS.2018.8594451)
-- Grassmann and Burgner-Kahrs [On the Merits of Joint Space and Orientation Representations in Learning the Forward Kinematics in SE(3)](https://doi.org/10.15607/RSS.2019.XV.017)
-- Kunzt et al. [Learning the complete shape of concentric tube robots](https://doi.org/10.1109/TMRB.2020.2974523)
-- Grassmann et al. [A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots](https://openreview.net/pdf?id=DW9uz_GZ0og)
+- Grassmann et al. [CTCR Prototype Development: An Obstacle in the Research Community?](https://openreview.net/pdf?id=bYLFxFQPFtX)
 
-### BibTeX
+Take a look at the following paper using learning-based approaches. They are presented in chronological order.
 
-This repository is part of the following publication.
-If you want to cite our CRL-Dataset-CTCR-Pose, you can use our [paper](https://openreview.net/pdf?id=DW9uz_GZ0og):
+- Bergeles et al. (HSMR 2015) [Concentric Tube Robot Kinematics using Neural Networks](https://scholar.google.com/scholar?as_sdt=0%2C31&q=Concentric+tube+robot+kinematics+using+neural+networks&btnG=)
+- Fagogenis et al. (IROS 2016) [Adaptive Nonparametric Kinematic Modeling of Concentric Tube Robots](https://doi.org/10.1109/IROS.2016.7759636)
+- Grassmann et al. (IROS 2018) [Learning the Forward and Inverse Kinematics of a 6-DOF Concentric Tube Continuum Robot in SE(3)](https://doi.org/10.1109/IROS.2018.8594451)
+- Grassmann and Burgner-Kahrs (RSS 2019) [On the Merits of Joint Space and Orientation Representations in Learning the Forward Kinematics in SE(3)](https://doi.org/10.15607/RSS.2019.XV.017)
+- Kunzt et al. (TMRB 2020) [Learning the Complete Shape of Concentric Tube Robots](https://doi.org/10.1109/TMRB.2020.2974523)
+- Iyengar et al. (IJCARS 2020) [Investigating Exploration for Deep Reinforcement Learning of Concentric Tube Robot Control](https://doi.org/10.1007/s11548-020-02194-z)
+- Donat et al. (TMRB) [Estimating Tip Contact Forces for Concentric Tube Continuum Robots Based on Backbone Deflection](https://doi.org/10.1109/TMRB.2020.3034258)
+- Liang et al. (ICRA 2021) [Learning-based Inverse Kinematics from Shape as Input for Concentric Tube Continuum Robots](https://doi.org/10.1109/ICRA48506.2021.9562085)
+- Iyengar and Stoyanov (ICRA 2021) [Deep Reinforcement Learning for Concentric Tube Robot Control with a Goal-Based Curriculum](https://doi.org/10.1109/ICRA48506.2021.9561620)
+- Grassmann et al. (IROS 2022) [A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots (Preprint)](https://openreview.net/pdf?id=DW9uz_GZ0og)
 
-```bibtex
-    @inproceedings{GrassmannBurgner-Kahrs_et_al_RSS_WS_2022,
-        title       =   {A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots},
-        author      =   {Grassmann, Reinhard M. and Chen, Ryan Zeyuan and Liang, Nan and Burgner-Kahrs, Jessica},
-        url         =   {https://openreview.net/pdf?id=DW9uz_GZ0og},
-        year        =   {2022},
-        booktitle   =   {Robotics: Science and Systems -- Workshop on Learning from Diverse, Offline Data (L-DOD)},
-    }
-```
+Note that the list is not exhaustive and will change as new publications appear.
+If you want to add your publication, shoot me a message.
